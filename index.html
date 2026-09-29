@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Viện Ảnh Du Lịch Việt Nam Tương Tác</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="addTabFocus()">
+
+    <header>
+        <h1>Khám Phá Vẻ Đẹp Du Lịch Việt Nam</h1>
+        <h2>Thư viện ảnh tương tác hỗ trợ bàn phím và chuột</h2>
+    </header>
+
+    <main>
+        <!-- Khung hiển thị ảnh lớn khi hover/focus -->
+        <div id="image">
+            Di chuột hoặc nhấn phím Tab để di chuyển qua các hình ảnh dưới đây.
+        </div>
+
+        <!-- Danh sách 6 hình ảnh thu nhỏ -->
+        <section class="gallery" aria-label="Danh sách điểm đến du lịch">
+            <img class="preview" 
+                 src="halong.jpg" 
+                 alt="Vịnh Hạ Long với các đảo đá vôi xanh ngát nổi bật trên mặt biển" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+
+            <img class="preview" 
+                 src="hoian.jpg" 
+                 alt="Phố cổ Hội An rực rỡ sắc màu đèn lồng về đêm bên dòng sông Hoài" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+
+            <img class="preview" 
+                 src="thaprua.jpg" 
+                 alt="Tháp Rùa cổ kính soi bóng trên mặt nước Hồ Gươm Hà Nội thanh bình" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+
+            <img class="preview" 
+                 src="ruong.jpg" 
+                 alt="Ruộng bậc thang Sapa chín vàng óng trải dài trên các sườn núi hoành xá" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+
+            <img class="preview" 
+                 src="dâng.jpg" 
+                 alt="Cầu Vàng Đà Nẵng độc đáo được nâng đỡ bởi hai bàn tay đá khổng lồ" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+
+            <img class="preview" 
+                 src="phuquoc.jpg" 
+                 alt="Bãi Sao Phú Quốc với dải cát trắng mịn và hàng dừa xanh bên bờ biển" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Thư Viện Ảnh Du Lịch. Dự án Thiết kế Web Tương tác & Khả năng Tiếp cận.</p>
+    </footer>
+
+</body>
+</html>

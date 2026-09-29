@@ -1,0 +1,84 @@
+/* Styling tổng thể */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7f6;
+    color: #222222;
+    text-align: center;
+}
+
+header h1 {
+    color: #0d5c75;
+    margin-bottom: 5px;
+    font-size: 2.2rem;
+}
+
+header h2 {
+    color: #444444;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* Khung hiển thị hình ảnh xem trước lớn */
+#image {
+    line-height: 300px;
+    height: 350px;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    border: 3px dashed #0d5c75;
+    background-color: #e0e0e0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #111111;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 12px;
+    transition: background-image 0.3s ease-in-out;
+}
+
+/* Bố cục lưới cho 6 ảnh nhỏ */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Kiểu dáng cho từng thumbnail */
+.preview {
+    width: 130px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+/* Hiệu ứng khi chuột di qua */
+.preview:hover {
+    transform: scale(1.08);
+    border-color: #0d5c75;
+}
+
+/* ĐIỂM QUAN TRỌNG: Viền rõ ràng khi được focus bằng bàn phím (Phục vụ AxE & WAVE) */
+.preview:focus {
+    outline: 4px solid #ff6b6b;
+    outline-offset: 3px;
+    transform: scale(1.08);
+}
+
+footer {
+    margin-top: 40px;
+    color: #666666;
+    font-size: 0.9rem;
+}
